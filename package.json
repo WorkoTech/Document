@@ -1,0 +1,54 @@
+{
+  "name": "@worko/document",
+  "version": "0.0.0",
+  "description": "Microservice that handle collaborative textual document edition",
+  "keywords": [
+    "microservice",
+    "gpe",
+    "etna",
+    "gdoc",
+    "jbourdale"
+  ],
+  "author": "Jules Bourdalé <jbourdale@advanced-schema.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/ms-doc-edition.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@rendu-git.etna-alternance.net:module-5130/activity-30494/group-690332.git"
+  },
+  "scripts": {
+    "build": "rimraf lib && tsc",
+    "start": "ts-node-dev --respawn --transpileOnly ./src/index.ts",
+    "test": "echo \"Error: run tests from root\""
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.0",
+    "ts-node-dev": "^1.0.0-pre.40",
+    "typescript": "^3.5.2"
+  },
+  "dependencies": {
+    "@teamwork/websocket-json-stream": "^2.0.0",
+    "axios": "^0.19.0",
+    "cors": "^2.8.5",
+    "errorhandler": "^1.5.1",
+    "express": "^4.17.1",
+    "express-validator": "^6.3.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.2.7",
+    "morgan": "^1.9.1",
+    "pg": "^7.14.0",
+    "rich-text": "^4.0.0",
+    "sequelize": "^5.21.3",
+    "sharedb": "^1.0.0-beta.23",
+    "sharedb-mongo": "^1.0.0-beta.11",
+    "ws": "^7.0.1"
+  }
+}
